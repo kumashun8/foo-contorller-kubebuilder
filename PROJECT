@@ -1,0 +1,16 @@
+domain: k8s.io
+layout:
+- go.kubebuilder.io/v3
+projectName: foo-contorller-kubebuilder
+repo: github.com/kumashun8/foo-contorller-kubebuilder
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.io
+  group: samplecontroller
+  kind: Foo
+  path: github.com/kumashun8/foo-contorller-kubebuilder/api/v1alpha1
+  version: v1alpha1
+version: "3"
